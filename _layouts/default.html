@@ -17,7 +17,7 @@
               	<ul class="nav navbar-nav navbar-left">
 					<li>
 						<div class="logo">
-                  			<a href="#"> Dell Wiki</a>
+                  			<a href="#"> <img src="/assets/img/logo-wt-bl.png" alt=""></a>
                 		</div>
 					</li>
                </ul>
@@ -78,9 +78,11 @@
 
 
 
-
-
-
+    
+<!-- {% for topic1 in site.topic %}
+	<p>{{topic1.like}}</p>
+{% endfor %}
+ -->
 
 
 <!-- Start of Page Container -->
@@ -88,86 +90,33 @@
     <div class="container">
         <div class="row">
 
+
             <!-- start of page content -->
             <div class="span8 main-listing">
                 <h4 class="search-title text-color-gray">Search Results for 
                 	<span class="text-color-black" id="search-title-span">mn</span>
                 </h4>
                 <h4 id="no-result-found">No Result Found!</h4>
+
+{% for job in  site.jobboard %}
                 <article id="post-1" class=" post-1 topic type-topic status-publish hentry topic-tag-basic topic-tag-suggestion">
     				<header class="clearfix">
        					 <h3 class="post-title">
                         <a href="http://knowledgebase.inspirythemes.biz/forums/topic/what-is-the-best-theme-for-a-simple-blog/">
-               			 <i class="fa fa-pencil-square-o"></i>best</a>
+               			 <i class="fa fa-pencil-square-o"></i>{{job.topic_title}}</a>
       					</h3>
-				        <div class="post-meta clearfix">
-				            <span class="date"><i class="fa fa-calendar-o"></i>03 Sep, 2013</span>
+				       <!--  <div class="post-meta clearfix">
+				            <span class="date"><i class="fa fa-calendar-o"></i>&nbsp;&nbsp;{{job.date}}&nbsp;&nbsp;</span>
 				            <span class="category"><i class="fa fa-folder-open-o"></i></span>
-	                    </div><!-- end of post meta -->
+	                    </div> --> 
+	                    <!-- end of post meta -->
 				    </header>
-				    <p class="less-description">1.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in . . . 
-				    	<a class="readmore-link read-me-link" >Read more</a>
+				    <p class="less-description">{{job.topic_description}}<a class="readmore-link read-me-link" >&nbsp;&nbsp;&nbsp;&nbsp;Read more</a>
 				    </p>
-				    <p class="more-description">1.tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendre.amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in . . .
-				    </p>
+				    <p class="more-description">{{job.topic_more_description}}</p>
 				</article>
+ {% endfor %}
 
-				<article id="post-1" class=" post-1 topic type-topic status-publish hentry topic-tag-basic topic-tag-suggestion">
-    				<header class="clearfix">
-       					 <h3 class="post-title">
-                        <a href="http://knowledgebase.inspirythemes.biz/forums/topic/what-is-the-best-theme-for-a-simple-blog/">
-               			 <i class="fa fa-pencil-square-o"></i>office</a>
-      					</h3>
-				        <div class="post-meta clearfix">
-				            <span class="date"><i class="fa fa-calendar-o"></i>03 Sep, 2013</span>
-				            <span class="category"><i class="fa fa-folder-open-o"></i></span>
-	                    </div><!-- end of post meta -->
-				    </header>
-				    <p class="less-description">2.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in . 
-				    	<a class="readmore-link read-me-link" >Read more</a>
-				    </p>
-				    <p class="more-description">2.tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendre.amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in . 
-				    </p>
-				</article>
-
-				<article id="post-1" class=" post-1 topic type-topic status-publish hentry topic-tag-basic topic-tag-suggestion">
-    				<header class="clearfix">
-       					 <h3 class="post-title">
-                        <a href="http://knowledgebase.inspirythemes.biz/forums/topic/what-is-the-best-theme-for-a-simple-blog/">
-               			 <i class="fa fa-pencil-square-o"></i>sarkar</a>
-      					</h3>
-				        <div class="post-meta clearfix">
-				            <span class="date"><i class="fa fa-calendar-o"></i>03 Sep, 2013</span>
-				            <span class="category"><i class="fa fa-folder-open-o"></i></span>
-	                    </div><!-- end of post meta -->
-				    </header>
-				    <p class="less-description">3.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in . . . 
-				    	<a class="readmore-link read-me-link" >Read more</a>
-				    </p>
-				    <p class="more-description">3.tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendre.amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in . . .
-				    </p>
-				</article>
-
-				<article id="post-1" class=" post-1 topic type-topic status-publish hentry topic-tag-basic topic-tag-suggestion">
-    				<header class="clearfix">
-
-       					 <h3 class="post-title">
-                        <a href="http://knowledgebase.inspirythemes.biz/forums/topic/what-is-the-best-theme-for-a-simple-blog/">
-               			 <i class="fa fa-pencil-square-o"></i>4.What is the best theme for a simple blog</a>
-      					</h3>
-
-				        <div class="post-meta clearfix">
-				            <span class="date"><i class="fa fa-calendar-o"></i>03 Sep, 2013</span>
-				            <span class="category"><i class="fa fa-folder-open-o"></i></span>
-	                    </div><!-- end of post meta -->
-
-				    </header>
-				    <p class="less-description">4.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in . . . 
-				    	<a class="readmore-link read-me-link" >Read more</a>
-				    </p>
-				    <p class="more-description">4.tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendre.amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in . . .
-				    </p>
-				</article>
 			</div>
             <!-- end of page content -->
 
