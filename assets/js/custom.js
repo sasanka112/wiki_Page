@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+
 $(".read-me-link").click(function(){
 
   $( ".more-description" ).each(function() {
@@ -43,9 +44,13 @@ function postSearchFunction(){
     search_text = search_text.trim().toLowerCase();
 
     if(search_text != "")
-    {
-  $(".search-title").show();
-    }
+      {
+        $(".search-title").show();
+      }
+    else
+      {
+        $(".search-title").hide();
+      }
     topic_header = topic_header.trim().toLowerCase();
     if(topic_header.search(search_text)  > -1 )
            {
