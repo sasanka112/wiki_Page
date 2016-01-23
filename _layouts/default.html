@@ -2,79 +2,25 @@
 
 
 
-<body >
-
-<header >
-<!-- navigation-bar -->
-          <nav class="navbar navbar-default dell-head " >
-            <div>
-              <!-- logo -->
-                
-              <!-- End of logo -->
-
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse" >
-              	<ul class="nav navbar-nav navbar-left">
-					<li>
-						<div class="logo">
-                  			<a href="#"> <img src="/assets/img/logo-wt-bl.png" alt=""></a>
-                		</div>
-					</li>
-               </ul>
-                <ul class="nav navbar-nav navbar-right">
-<!-- 	                <li >
-	                   <a href="/portfolio">Portfolio</a>
-	                </li>  -->
-
-	                <li >
-	                   <a href="">Home</a>
-	                </li>
-      					<li  class="dell-menu-item"><a href="#">Skins</a>
-      						<ul class="dell-sub-menu" id="dell-skin-color">
-      							<li id="menu-item-Blue-Skin" class="menu-item"><a href="#">Blue Skin</a></li>
-      							<li id="menu-item-Green-Skin" class="menu-item"><a >Green Skin</a></li>
-      							<li id="menu-item-Red-Skin" class="menu-item"><a >Red Skin</a></li>
-      							<li id="menu-item-Default-Skin" class="menu-item"><a >Default Skin</a></li>
-      						</ul>
-      					</li>
-      <!-- 
-      					<li  class="dell-menu-item"><a href="#">more</a>
-      						<ul class="dell-sub-menu" id="dell-more-item">
-      							<li id="menu-item-236" class="menu-item "><a >faq</a></li>
-      							<li id="menu-item-237" class="menu-item"><a href=>full</a></li>
-      							<li id="menu-item-238" class="menu-item"><a href=>link</a></li>
-      						</ul>
-      					</li> -->
-
-
-	                <li >
-	                      <a href="/engage_us">contact Us </a>
-	                </li>
-               	</ul>
-             </div><!-- /.navbar-collapse -->
-           </div><!-- /.container-fluid -->
-          </nav>
-        <!-- navigation-bar -->
-</header>
 
 
 	<div class="dell-search-div">	
 	   <!-- Start of Search Wrapper -->
         <div class="search-area-wrapper">
             <div class="search-area container">
-                <h1 class="search-header text-center text-color-white">Have a Question?</h3>
-                <p class="search-tag-line text-center text-color-white">If you have any question you can ask below or enter what you are looking for!</p>
+                <h1 class="search-header text-center text-color-white campton_book">Have a Question?</h3>
+                <p class="search-tag-line text-center text-color-white campton_book">If you have any question you can ask below or enter what you are looking for!</p>
 
 
-<div class="click-anim">
-<figure class="hungry" style="background-color: ">
-<div class="eye"></div>
-<div class="eye">
-</div>
-<div class="mouth ">
-</div>
-</figure>
-</div>
+                <div class="click-anim">
+                <figure class="hungry" style="background-color: ">
+                <div class="eye"></div>
+                <div class="eye">
+                </div>
+                <div class="mouth ">
+                </div>
+                </figure>
+                </div>
 
                 
                     <input class="search-term" type="text" id="search-text-box" name="search-text" placeholder="Type your search terms here" title="* Please enter a search term!" />
@@ -112,8 +58,8 @@
 {% for job in  site.jobboard %}
                 <article id="post-1" class=" post-1 topic type-topic status-publish hentry topic-tag-basic topic-tag-suggestion">
     				<header class="clearfix">
-       					 <h3 class="post-title">
-                        <a href="http://knowledgebase.inspirythemes.biz/forums/topic/what-is-the-best-theme-for-a-simple-blog/">
+       					 <h3 class="post-title campton_bold">
+                        <a >
                			 <i class="fa fa-pencil-square-o"></i>{{job.topic_title}}</a>
       					</h3>
 				       <!--  <div class="post-meta clearfix">
@@ -122,9 +68,9 @@
 	                    </div> --> 
 	                    <!-- end of post meta -->
 				    </header>
-				    <p class="less-description">{{job.topic_description}}<a class="readmore-link read-me-link" >&nbsp;&nbsp;&nbsp;&nbsp;Read more</a>
+				    <p class="less-description campton_light">{{job.topic_description}}<a class="readmore-link read-me-link" >&nbsp;&nbsp;&nbsp;&nbsp;Read more</a>
 				    </p>
-				    <p class="more-description">{{job.topic_more_description}}</p>
+				    <p class="more-description campton_light">{{job.topic_more_description}}</p>
 				</article>
  {% endfor %}
 

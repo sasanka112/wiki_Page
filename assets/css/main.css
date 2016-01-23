@@ -184,6 +184,11 @@ input#search-text-box {
 input#search-text-box:focus{
     outline: none;
 }
+input#search-text-box:focus::-webkit-input-placeholder {
+  transition: text-indent 1s 1s ease; 
+  text-indent: -100%;
+  opacity: 1;
+}
 .search-btn {
     border-radius: 35px;
     position: absolute;
@@ -230,6 +235,10 @@ h4#no-result-found {
 .topic .post-title a{
     text-decoration: none;
     /*color:#4fb084;*/
+}
+.topic p{
+    line-height: 40px;
+    letter-spacing: 1px;
 }
 .topic .post-meta.clearfix {
     margin-bottom: 4px;
@@ -280,6 +289,9 @@ figure {
     animation-delay: -1s;
     background-color: dodgerblue;
 }
+figure.hungry:hover {
+    background: red;
+}
 figure {
     width: 100px;
     height: 100px;
@@ -314,9 +326,9 @@ figure {
 }
 .mouth {
     display: block;
-    width: 31%;
+    width: 26%;
     height: 20px;
-    margin: 13px -1px 27px 36px;
+    margin: 11px -1px 27px 36px;
     background: rgba(0,0,0,.9);
     border-radius: 10px 10px 100px 100px;
     border-radius: 10px 10px 50% 50%;
