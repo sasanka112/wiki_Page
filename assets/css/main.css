@@ -79,7 +79,7 @@
 /* for header*/
 .dell-head{
     z-index: 10;
-    height: 56px;
+    height: 53px;
     padding-top: 2px;
     width: 100%;
     position: fixed;
@@ -92,6 +92,10 @@
 
 .dell-head .navbar-collapse ul>li>a {
     color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: gray;
+    background-color: transparent;
 }
 .dropdown-menu{
     background-color: inherit;
@@ -168,7 +172,8 @@
     margin-top: 20px;
 }
 input#search-text-box {
-    width: 70%;
+    width: 81%;
+    border-radius: 35px;
     height: 53px;
     border-style: none;
     margin-right: 24px;
@@ -176,14 +181,18 @@ input#search-text-box {
     margin-left: 111px;
     margin-top: 30px;
 }
-input.search-btn {
+.search-btn {
+    border-radius: 35px;
+    position: absolute;
+    margin-left: -134px;
+    margin-top: 35px;
     opacity: 0.8;
-    width: 9%;
-    height: 53px;
+    width: 7%;
+    height: 43px;
     background-color: #4fb081;
     border-style: none;
 }
-input.search-btn:hover{
+.search-btn:hover{
     opacity: 1;
 }
 /* end for the searc div */
@@ -208,7 +217,9 @@ h4#no-result-found {
 
 }
 .topic {
-    margin-top: 40px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
 }
 .topic .post-title a{
     text-decoration: none;
@@ -218,94 +229,14 @@ h4#no-result-found {
     margin-bottom: 4px;
 }
 .topic a.readmore-link {
+    color: darkgray;    
     text-decoration: none;
     cursor: pointer;
 }
 .more-description{
     display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* end of Page Container */
 
 /*for footer*/
 .dell-footer{
@@ -317,6 +248,7 @@ h4#no-result-found {
 }
 .dell-footer .col-md-2 span{
     float: right;
+    padding-left: 50px;
 }
 
 

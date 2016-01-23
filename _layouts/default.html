@@ -31,7 +31,7 @@
 
 					<li  class="dell-menu-item"><a href="#">Skins</a>
 						<ul class="dell-sub-menu" id="dell-skin-color">
-							<li id="menu-item-Blue-Skin" class="menu-item"><a >Blue Skin</a></li>
+							<li id="menu-item-Blue-Skin" class="menu-item"><a href="#">Blue Skin</a></li>
 							<li id="menu-item-Green-Skin" class="menu-item"><a >Green Skin</a></li>
 							<li id="menu-item-Red-Skin" class="menu-item"><a >Red Skin</a></li>
 							<li id="menu-item-Default-Skin" class="menu-item"><a >Default Skin</a></li>
@@ -67,8 +67,10 @@
 
                 <!-- <form id="search-form" class="search-form clearfix" method="get"  autocomplete="off"> -->
                     <input class="search-term" type="text" id="search-text-box" name="search-text" placeholder="Type your search terms here" title="* Please enter a search term!" />
-                    <input class="search-btn" type="button" value="Search" id="dell-search-button"/>
-                    <div id="search-error-container"></div>
+                    <!-- <input  type="button" value="Search" /> -->
+                    <button class="search-btn" id="dell-search-button">
+                    <i class="fa fa-search"></i><span>&nbsp;&nbsp;Search</span></button>
+                    <!-- <div id="search-error-container"></div> -->
                 <!-- </form> -->
             </div>
         </div>
@@ -96,7 +98,7 @@
                 <h4 class="search-title text-color-gray">Search Results for 
                 	<span class="text-color-black" id="search-title-span">mn</span>
                 </h4>
-                <h4 id="no-result-found">No Result Found!</h4>
+                <h4 id="no-result-found">Sorry,no Result Found!</h4>
 
 {% for job in  site.jobboard %}
                 <article id="post-1" class=" post-1 topic type-topic status-publish hentry topic-tag-basic topic-tag-suggestion">
