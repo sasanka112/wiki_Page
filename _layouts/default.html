@@ -1,499 +1,184 @@
 {% include header.html %}
 
-<main>
-
-	<!-- indicators -->
-		<ul class="scroll-indicators">
-
-			<li class="active" data-tab="1">
-				<a href="javascript:void(0)">
-					<span class="hw-dot"></span>
-					<span class="hw-label gotham-rounded-light">What we do</span>
-				</a>
-			</li>
-			<li data-tab="2">
-				<a href="javascript:void(0)">
-					<span class="hw-dot"></span>
-					<span class="hw-label gotham-rounded-light">Blog</span>
-				</a>
-			</li>
-			<li data-tab="3">
-				<a href="javascript:void(0)">
-					<span class="hw-dot"></span>
-					<span class="hw-label gotham-rounded-light">Products</span>
-				</a>
-			</li>
-			<li data-tab="4">
-				<a href="javascript:void(0)">
-					<span class="hw-dot"></span>
-					<span class="hw-label gotham-rounded-light ">What we offer</span>
-				</a>
-			</li>
-			
-		</ul>
-	<!-- End of indicators -->
-
-	<div class="hw-scroll">
-
-		<!--section1-->
-			<section class="scroll-anim active" data-value="1">
-				<div>
-					<div class="hm-text hm-text1" id="ban-text">
-						<h1 class="text-center gotham-rounded-bold hw-main-heading ">{{site.data.Home_page.home_page.banner1[0].title}}</h1>
-						<p class="hw-para gotham-rounded-light text-center">{{site.data.Home_page.home_page.banner1[0].content}}</p>
-					</div>
-				</div>
-
-			</section>
-		<!-- end of section1-->
-
-		<!-- section2 -->
-			<section class="scroll-anim " data-value="2">
-				<div class="container-fluid padding-zero">
-					<div class="blog-img1 ">
-					<div class="row">
-
-						
-						<div class="col-lg-6 padding-zero">
-							
-								<div class="blog-think">
-									<img src="/assets/img/landingpage/Typo_4.png">
-								</div>
-								<div class="blog-text clr-black">
-									<p class=" gotham-rounded-light hw-copyright">1 .Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.</p>
-								</div>
-							
-							
-						</div>
 
 
-<style type="text/css">
-	.div2-right-div{
-		    padding: 40px;
-		margin-top: 62px;
-		margin-left: -15px;
-		height:488px;
-		width: 626px;
-	}
+<body >
+
+<header >
+<!-- navigation-bar -->
+          <nav class="navbar navbar-default dell-head " >
+            <div>
+              <!-- logo -->
+                
+              <!-- End of logo -->
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" >
+              	<ul class="nav navbar-nav navbar-left">
+					<li>
+						<div class="logo">
+                  			<a href="#"> Dell Wiki</a>
+                		</div>
+					</li>
+               </ul>
+                <ul class="nav navbar-nav navbar-right">
+	                <li >
+	                   <a href="/portfolio">Portfolio</a>
+	                </li>
+	                <li >
+	                   <a href="/portfolio">Portfolio</a>
+	                </li>
+
+					<li  class="dell-menu-item"><a href="#">Skins</a>
+						<ul class="dell-sub-menu" id="dell-skin-color">
+							<li id="menu-item-Blue-Skin" class="menu-item"><a >Blue Skin</a></li>
+							<li id="menu-item-Green-Skin" class="menu-item"><a >Green Skin</a></li>
+							<li id="menu-item-Red-Skin" class="menu-item"><a >Red Skin</a></li>
+							<li id="menu-item-Default-Skin" class="menu-item"><a >Default Skin</a></li>
+						</ul>
+					</li>
+
+					<li  class="dell-menu-item"><a href="#">more</a>
+						<ul class="dell-sub-menu" id="dell-more-item">
+							<li id="menu-item-236" class="menu-item "><a >faq</a></li>
+							<li id="menu-item-237" class="menu-item"><a href=>full</a></li>
+							<li id="menu-item-238" class="menu-item"><a href=>link</a></li>
+						</ul>
+					</li>
+
+
+	                <li >
+	                      <a href="/engage_us">contact Us </a>
+	                </li>
+               	</ul>
+             </div><!-- /.navbar-collapse -->
+           </div><!-- /.container-fluid -->
+          </nav>
+        <!-- navigation-bar -->
+</header>
+
+
+	<div class="dell-search-div">	
+	   <!-- Start of Search Wrapper -->
+        <div class="search-area-wrapper">
+            <div class="search-area container">
+                <h1 class="search-header text-center text-color-white">Have a Question?</h3>
+                <p class="search-tag-line text-center text-color-white">If you have any question you can ask below or enter what you are looking for!</p>
+
+                <!-- <form id="search-form" class="search-form clearfix" method="get"  autocomplete="off"> -->
+                    <input class="search-term" type="text" id="search-text-box" name="search-text" placeholder="Type your search terms here" title="* Please enter a search term!" />
+                    <input class="search-btn" type="button" value="Search" id="dell-search-button"/>
+                    <div id="search-error-container"></div>
+                <!-- </form> -->
+            </div>
+        </div>
+        <!-- End of Search Wrapper -->
+	</div>
 	
-#div2-right-div-part1 ,#div2-right-div-part2,#div2-right-div-part3,#div2-right-div-part4{
-	display: none;
-}
 
 
-#div2-right-div-part1{
-	background-color: #ffa614;
-}
-#div2-right-div-part2{
-	background-color: #fa5600;
-}
-#div2-right-div-part3{
-	background-color: #2e2837;
-}
-#div2-right-div-part4{
-	background-color: #0fbb87;	
-}
-
-.right-div-part11 {
-	position: relative;
-	background-color: #ffa614;
-	margin-right: 10px;
-margin-bottom: 10px;
-height: 233px;
-}
-.right-div-part22 {
-	position: relative;
-	background-color: #fa5600;
-	margin-left: 10px;
-margin-bottom: 9px;
-height: 233px;
-}
-.right-div-part33 {
-	position: relative;
-	background-color: #2e2837;
-	margin-right: 10px;
-margin-top: 10px;
-height: 233px;
-}
-.right-div-part44 {
-	position: relative;
-	background-color: #0fbb87;	
-	margin-left: 10px;
-margin-top: 10px;
-height: 233px;
-}
 
 
-#div2-right-div-part1 {
-		height:488px;
-		width: 626px;
-	    animation: fadein1 0.4s;
-	    -moz-animation: fadein1 0.4s; /* Firefox */
-	    -webkit-animation: fadein1 0.4s; /* Safari and Chrome */
-	    -o-animation: fadein1 0.4s; /* Opera */
-}
-@keyframes fadein1 {
-    from {
-        height:88px;
-		width: 77px;
-    }
-    to {
-        height:488px;
-		width: 626px;
-    }
-}
-#div2-right-div-part2 {
-		height:488px;
-		width: 626px;
-		margin-left: 0px;
-	    animation: fadein2 0.4s;
-	    -moz-animation: fadein2 0.4s; /* Firefox */
-	    -webkit-animation: fadein2 0.4s; /* Safari and Chrome */
-	    -o-animation: fadein2 0.4s; /* Opera */
-}
-@keyframes fadein2 {
-    from {
-        height:88px;
-		width: 77px;
-		margin-left: 255px;		
-    }
-    to {
-        height:488px;
-		width: 626px;
-		margin-left: 0px;		
-    }
-}
-#div2-right-div-part3 {
-		height:488px;
-		width: 626px;
-		margin-top: 61px;
-	    animation: fadein3 0.4s;
-	    -moz-animation: fadein3 0.4s; /* Firefox */
-	    -webkit-animation: fadein3 0.4s; /* Safari and Chrome */
-	    -o-animation: fadein3 0.4s; /* Opera */
-}
-@keyframes fadein3 {
-    from {
-		margin-top: 300px;
-        height:88px;
-		width: 77px;
-    }
-    to {
-        height:488px;
-		width: 626px;
-		margin-top: 61px;		
-    }
-}
-#div2-right-div-part4 {
-		height:488px;
-		width: 626px;
-		margin-left: 0px;
-		margin-top: 61px;		
-	    animation: fadein4 0.4s;
-	    -moz-animation: fadein4 0.4s; /* Firefox */
-	    -webkit-animation: fadein4 0.4s; /* Safari and Chrome */
-	    -o-animation: fadein4 0.4s; /* Opera */
-}
-@keyframes fadein4 {
-    from {
-        height:88px;
-		width: 77px;
-		margin-left: 255px;	
-		margin-top: 300px;
-    }
-    to {
-        height:488px;
-		width: 626px;
-		margin-left: 0px;		
-		margin-top: 61px;		
-    }
-}
 
 
-.div420{
-	
-}
-#div-main-part2 img{
-	position: absolute;	
-	width: 30%;
-    margin-top: 35px;
-    margin-left: 10px;
-}
-#div-main-part2 .blog-text2 {
-    top: 21%;
-    margin-left: 27px;
-}
-#div-main-part2 .blog-text3 {
-    top: 21%;
-    margin-left: 27px;
-}
 
-#div-main-part2 p{
-    margin-top: 155px;
-    margin-left: 10px;
-    position: absolute;
 
-}
-.div-main-part2-part1{
-	position: relative;
-	    margin-top: 62px;
-}
+<!-- Start of Page Container -->
+<div class="page-container">
+    <div class="container">
+        <div class="row">
 
-#div-main-part1  img{
-	width: 15%;
-    margin-bottom: 5px;
-        margin-right: 25px;
-}
-.blog-div-part{
-    margin-bottom: 38px;
-}
-#div-main-part1  .blog-link-anchor{
-    text-decoration: none;
-    color: #ff0;
-    margin-left: 15px;
-}
-#div-main-part1  .blog-link-anchor:hover{
-	color: gray;
-}
-#div-main-part1  .blog-link-anchor span{
-	opacity:0;
-	color: gray;
-}
-#div-main-part1  .blog-link-anchor:hover span{
-	opacity:1;
-}
-</style>		
-		
-						
-					<div class="col-lg-6 padding-zero" id="div-main">
-					<div id="div-main-part1">							
-						<div class="div2-right-div " id="div2-right-div-part1">
-							<div class="blog-div-part"><img src="/assets/Sample_Outline_Icon.png">
-								<span class="gotham-rounded-bold clr-white header-links text-center">WE ARE THE THINKER</span>
-							</div>
-							<p class="hw-copyright gotham-rounded-light clr-white">11 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.<a class="blog-link-anchor" href="">Read More
-								<span class="fa fa-arrow-right"></span></a></p>
-						</div>
-						<div class="div2-right-div" id="div2-right-div-part2">
-							<div class="blog-div-part"><img src="/assets/Sample_Outline_Icon.png">
-								<span class="gotham-rounded-bold clr-white header-links text-center">WE ARE THE THINKER</span>
-							</div>
-							<p class="hw-copyright gotham-rounded-light clr-white">11 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.<a class="blog-link-anchor" href="">Read More
-								<span class="fa fa-arrow-right"></span></a></p>
-						</div>
-						<div class="div2-right-div " id="div2-right-div-part3">
-							<div class="blog-div-part"><img src="/assets/Sample_Outline_Icon.png">
-								<span class="gotham-rounded-bold clr-white header-links text-center">WE ARE THE THINKER</span>
-							</div>
-							<p class="hw-copyright gotham-rounded-light clr-white">11 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.<a class="blog-link-anchor" href="">Read More
-								<span class="fa fa-arrow-right"></span></a></p>
-						</div>
-						<div class="div2-right-div " id="div2-right-div-part4">
-							<div class="blog-div-part"><img src="/assets/Sample_Outline_Icon.png">
-								<span class="gotham-rounded-bold clr-white header-links text-center">WE ARE THE THINKER</span>
-							</div>
-							<p class="hw-copyright gotham-rounded-light clr-white">11 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod laborum.<a class="blog-link-anchor" href="">Read More
-								<span class="fa fa-arrow-right"></span></a></p>
-						</div>
-					</div>
+            <!-- start of page content -->
+            <div class="span8 main-listing">
+                <h4 class="search-title text-color-gray">Search Results for 
+                	<span class="text-color-black" id="search-title-span">mn</span>
+                </h4>
+                <h4 id="no-result-found">No Result Found!</h4>
+                <article id="post-1" class=" post-1 topic type-topic status-publish hentry topic-tag-basic topic-tag-suggestion">
+    				<header class="clearfix">
+       					 <h3 class="post-title">
+                        <a href="http://knowledgebase.inspirythemes.biz/forums/topic/what-is-the-best-theme-for-a-simple-blog/">
+               			 <i class="fa fa-pencil-square-o"></i>best</a>
+      					</h3>
+				        <div class="post-meta clearfix">
+				            <span class="date"><i class="fa fa-calendar-o"></i>03 Sep, 2013</span>
+				            <span class="category"><i class="fa fa-folder-open-o"></i></span>
+	                    </div><!-- end of post meta -->
+				    </header>
+				    <p class="less-description">1.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in . . . 
+				    	<a class="readmore-link read-me-link" >Read more</a>
+				    </p>
+				    <p class="more-description">1.tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendre.amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in . . .
+				    </p>
+				</article>
 
-					<div id="div-main-part2">
-							<div class="row div-main-part2-part1" >
-								<div class="col-lg-5 padding-rite right-div-part11" id="right-div-part1"  >
-									<img src="/assets/Sample_Outline_Icon.png">
-											<p class="gotham-rounded-bold clr-white header-links">WE ARE THE THINKER</p>
-								</div>
-								<div class="col-lg-5 padding-lft right-div-part22"  id="right-div-part2" >
-									<img src="/assets/Sample_Outline_Icon.png">
-											<p class="gotham-rounded-bold clr-white header-links">WE ARE THE THINKER</p>
-								</div>
-								<div class="col-lg-2"></div>
-							</div>
-							<div class="row div-main-part2-part2" >
-								<div class="col-lg-5 padding-rite right-div-part33" id="right-div-part3">
-									<img src="/assets/Sample_Outline_Icon.png">
-											<p class="gotham-rounded-bold clr-white header-links">WE ARE THE THINKER</p>
-								</div>
-								<div class="col-lg-5 padding-lft right-div-part44" id="right-div-part4">
-									<!-- <div class="blog-backgrnd-blue"> -->
-										<!-- <div class="blog-text3"> -->
-											<!-- <div class="hr-display think-mar"> -->
-												<img src="/assets/Sample_Outline_Icon.png">
-											<p class="gotham-rounded-bold clr-white header-links">WE ARE THE THINKER</p>
-										<!-- </div> -->
-									<!-- </div> -->
-								</div>
-								<div class="col-lg-2"></div>
-							</div>
-						</div>
-						<!-- end of col-lg-5-->
-					</div>	
-					</div>
-					</div>
-				</div>
-			</section>
-		<!-- end of section2-->
+				<article id="post-1" class=" post-1 topic type-topic status-publish hentry topic-tag-basic topic-tag-suggestion">
+    				<header class="clearfix">
+       					 <h3 class="post-title">
+                        <a href="http://knowledgebase.inspirythemes.biz/forums/topic/what-is-the-best-theme-for-a-simple-blog/">
+               			 <i class="fa fa-pencil-square-o"></i>office</a>
+      					</h3>
+				        <div class="post-meta clearfix">
+				            <span class="date"><i class="fa fa-calendar-o"></i>03 Sep, 2013</span>
+				            <span class="category"><i class="fa fa-folder-open-o"></i></span>
+	                    </div><!-- end of post meta -->
+				    </header>
+				    <p class="less-description">2.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in . 
+				    	<a class="readmore-link read-me-link" >Read more</a>
+				    </p>
+				    <p class="more-description">2.tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendre.amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in . 
+				    </p>
+				</article>
 
-		<!-- section3 -->
-			<section class="scroll-anim app-banner" data-value="3">
-				<div class="banner3-text ">
-					<h1 class="gotham-rounded-bok hw-main-heading clr-white cust-margin">{{site.data.Home_page.home_page.banner3[0].title}} </h1>
-					<h1 class="gotham-rounded-bok hw-main-heading clr-white cust-margin">{{site.data.Home_page.home_page.banner3[0].title1}} </h1>
-					<p class="hw-para gotham-rounded-light clr-white">{{site.data.Home_page.home_page.banner3[0].content}}</p>
-				</div>
+				<article id="post-1" class=" post-1 topic type-topic status-publish hentry topic-tag-basic topic-tag-suggestion">
+    				<header class="clearfix">
+       					 <h3 class="post-title">
+                        <a href="http://knowledgebase.inspirythemes.biz/forums/topic/what-is-the-best-theme-for-a-simple-blog/">
+               			 <i class="fa fa-pencil-square-o"></i>sarkar</a>
+      					</h3>
+				        <div class="post-meta clearfix">
+				            <span class="date"><i class="fa fa-calendar-o"></i>03 Sep, 2013</span>
+				            <span class="category"><i class="fa fa-folder-open-o"></i></span>
+	                    </div><!-- end of post meta -->
+				    </header>
+				    <p class="less-description">3.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in . . . 
+				    	<a class="readmore-link read-me-link" >Read more</a>
+				    </p>
+				    <p class="more-description">3.tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendre.amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in . . .
+				    </p>
+				</article>
 
-				<div class="banner3-img">
-    				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
-     
-    
-				      <!-- Wrapper for slides -->
-				      <div class="carousel-inner" role="listbox">
-				        <div class="item active">
-				          <img src="/assets/img/landingpage/screen1.jpg" alt="...">
-				        </div>
-				        <div class="item">
-				          <img src="/assets/img/landingpage/screen2.jpg" alt="..">
-				        </div>
-				         <div class="item">
-				          <img src="/assets/img/landingpage/screen3.jpg" alt="..">
-				        </div>
-				      </div>
-    
-    
+				<article id="post-1" class=" post-1 topic type-topic status-publish hentry topic-tag-basic topic-tag-suggestion">
+    				<header class="clearfix">
+
+       					 <h3 class="post-title">
+                        <a href="http://knowledgebase.inspirythemes.biz/forums/topic/what-is-the-best-theme-for-a-simple-blog/">
+               			 <i class="fa fa-pencil-square-o"></i>4.What is the best theme for a simple blog</a>
+      					</h3>
+
+				        <div class="post-meta clearfix">
+				            <span class="date"><i class="fa fa-calendar-o"></i>03 Sep, 2013</span>
+				            <span class="category"><i class="fa fa-folder-open-o"></i></span>
+	                    </div><!-- end of post meta -->
+
+				    </header>
+				    <p class="less-description">4.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in . . . 
+				    	<a class="readmore-link read-me-link" >Read more</a>
+				    </p>
+				    <p class="more-description">4.tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendre.amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in . . .
+				    </p>
+				</article>
+			</div>
+            <!-- end of page content -->
+
+                                    <!-- end of sidebar -->
+        </div>
     </div>
 </div>
-					
-				
+<!-- End of Page Container -->
 
-			</section>
-		<!-- end of section3-->
 
-		<!-- section4-->
-		<section class="scroll-anim" data-value="4">
-			
-				<div class="hm-text latest-think hm-service">
-					<h1 class=" gotham-rounded-bok hw-carousel-heading">{{site.data.Home_page.home_page.banner4[0].title}}</h1>
-					<p class="hw-para gotham-rounded-light">{{site.data.Home_page.home_page.banner4[0].content}}</p>
-					<p class="dive "><a href="/our_thinking" class="text-uppercase gotham-rounded-bold">{{site.data.Home_page.home_page.banner4[0].link}}</a></p>
-
-					<div class="application">
-
-						<div class="appln">
-							<p class="clr-white gotham-rounded-bok hr-display">Application<br> Statergies</p>
-						</div><!-- end of appln-->
-							
-							<div class="appln-statergies hide">
-								<div class="hm-arrow"></div>
-								<p class="gotham-rounded-bok">We are your value partners, explore... </p>
-								<div class="col-lg-6">
-									<ul class="gotham-rounded-light hw-contact-no">
-										<li>Experience Design</li>
-										<li>Agile Thinking</li>
-										<li>Borderless Business</li>
-										<li>Engineering Practice</li>
-										<li>Intelligent Infrastructure</li>
-									</ul>
-								</div>
-								<div class="col-lg-6">
-									<ul class="gotham-rounded-light hw-contact-no">
-										<li>Software Intelligence</li>
-										<li>Eco-system Connected</li>
-										<li>Fluid Architecture</li>
-										<li>Business on cloud</li>
-									</ul>
-								</div>		
-							</div>
-
-						<div class="it-solution">
-							<p class="clr-white gotham-rounded-bok hr-display">IT Solutions</p>
-						</div>
-						
-						<div class="it-solutions hide">
-							<div class="hm-arrow hm_it"></div>
-							<p class="gotham-rounded-bok">Our IT Solutions</p>
-							<div class="col-lg-3">
-								<ul class="gotham-rounded-light hw-contact-no">
-									<li>Platform Integration</li>
-									<li>SOA</li>
-									<li>Micro Services</li>
-									<li>ETL</li>
-									<li>Data Processing</li>
-								</ul>
-							</div>
-							<div class="col-lg-3">
-								<ul class="gotham-rounded-light hw-contact-no">
-									<li>Engineering Practice</li>
-									<li>DevOps</li>
-									<li>Performance Engg.</li>
-									<li>Test Automation</li>
-									<li>Agile Testing</li>
-								</ul>
-							</div>	
-							<div class="col-lg-3">
-								<ul class="gotham-rounded-light hw-contact-no">
-									<li>Mobility/Big Data</li>
-									<li>Enterprise Mobility</li>
-									<li>Operational Analytics</li>
-									<li>Predictive Analysis</li>
-									<li>Consumer Apps</li>
-								</ul>
-							</div>
-							<div class="col-lg-3">
-								<ul class="gotham-rounded-light hw-contact-no">
-									<li>UI/UX</li>
-									<li>Visual Design</li>
-									<li>FrontEnd Dev.</li>
-									<li>Data Visualization</li>
-									<li>Reporting Dashboard </li>
-								</ul>
-							</div>			
-						</div>
-					</div><!-- end of application-->	
-				</div>
-			</section>
-		<!-- end of section4-->
-
-		{% include homepage-head.html %}
-
-	</div>
-</main>	
 
 
 
 {% include footer.html %}
-
-
-
-
-<script type="text/javascript">
-
-    $("#div-main-part2 #right-div-part1").click(function(){
-$("#div-main-part2").css("display", "none");
-$("#div2-right-div-part1").css("display", "block");
-        });
-        $("#right-div-part2 ").click(function(){
-$("#div-main-part2").css("display", "none");
-$("#div2-right-div-part2").css("display", "block");        
-        });
-
-
-        $("#right-div-part3").click(function(){
-$("#div-main-part2").css("display", "none");
-$("#div2-right-div-part3").css("display", "block");        
-        });
-
-
-        $("#right-div-part4").click(function(){
-$("#div-main-part2").css("display", "none");
-$("#div2-right-div-part4").css("display", "block");        
-        });
-
-        $("#div-main-part1").mouseleave(function(){
-$("#div-main-part2").css("display", "block");
-$("#div2-right-div-part1").css("display", "none");
-$("#div2-right-div-part1").css("display", "none");  
-$("#div2-right-div-part2").css("display", "none");  
-$("#div2-right-div-part3").css("display", "none");  
-$("#div2-right-div-part4").css("display", "none");         
-        }); 
-</script>		       

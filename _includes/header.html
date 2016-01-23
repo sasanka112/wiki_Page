@@ -1,98 +1,70 @@
-<!doctype html>
-    <title>{% if page.title %}{{ page.title }}{% endif %}</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-     <!-- Styles -->
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/chan.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="/assets/js/modernizr/modernizr.js"></script>
-    <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dell Wiki</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">  
+ <!-- Bootstrap -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
 
-{% if page.layout == "default" %}
-<body class="hw-home-body">
-{% else %}
-<body class="hidden-xs hidden-sm">  
-{% endif %}
+</head>
+<body >
 
-  {% if page.layout == "default" %}
-  <header class="hw-home">
-    {% else %}
-    <header>
-   <!--  <div class="container-fluid "> 
-          <div class="row">
-            <a class="contact hr-display clr-white gotham-rounded-bok hw-contact-no">Contact Us +0123456789</a>
-          </div>
-    </div> -->
-{% endif %}
-
-
-
-  <!-- navigation-bar -->
-          <nav class="navbar navbar-default">
+<header >
+<!-- navigation-bar -->
+          <nav class="navbar navbar-default dell-head " >
             <div>
               <!-- logo -->
-                <div class="logo">
-                  <a href="/"></a>
-                </div>
+                
               <!-- End of logo -->
 
               <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse" id="Hashworks-Nav">
+              <div class="collapse navbar-collapse" >
                 <ul class="nav navbar-nav navbar-left">
-                 
-                <li class="gotham-rounded-light header-links dropdown-link">
-                   <a href="/portfolio">Portfolio</a>
-                    <ul class="dropdown">
-                      <a href="/portfolio/#DataOps"><li class="gotham-rounded-light hw-contact-no first_dropdown">DataOps</li></a>
-                      <a href="/portfolio/#DevOps"><li class="gotham-rounded-light hw-contact-no">DevOps</li></a>
-                      <a href="/portfolio/#DataScience"><li class="gotham-rounded-light hw-contact-no">Data Science</li></a>
-                      <a href="/portfolio/#Ui-ux"><li class="gotham-rounded-light hw-contact-no">UI/UX</li></a>
-                      <a href="/portfolio/#Mobility"><li class="gotham-rounded-light hw-contact-no last_dropdown">Mobility</li></a>
-                    </ul>
-                </li>
-                 
-                <li class="gotham-rounded-light header-links dropdown-link">
-                      <a href="/engage_us">Engage Us </a>
-                      <ul class="dropdown">
-                          <a href="/our_thinking"><li class="gotham-rounded-light hw-contact-no">Our Thinking</li></a>
-                          <a href="/talent_acquisition"><li class="gotham-rounded-light hw-contact-no">Talent Acquisition</li></a>
-                          <a href="/upskilling"><li class="gotham-rounded-light hw-contact-no">Upskilling</li></a>
-                      </ul>
-                </li>
-                   <li class="gotham-rounded-light header-links">
-                      <a href="/casestudy">Case Study</a>
-                   </li>
-                 </ul>
-                 <span class="line-animation1" style="overflow: hidden; width: 0px; left: 0;"></span>                           
-                <ul class="nav navbar-nav navbar-right">
-                  {% for item in site.data.nav.main-right %}
-                    <li class="gotham-rounded-light header-links">
-                      <a href="{{ item.url }}">{{ item.text }}</a>
-                    </li>
-                  {% endfor %}
-                  <!-- search bar-->
-                  <li>
-                    <div id="credits" class=" hidden ">
-<!--                       <div class="input-group">
-                      <input type="text" class="form-control gotham-rounded-light header-search" placeholder="search..."/>
-                      <span class="input-group-addon search"> -->
-
-                   </div>
-                  </li>
-                  <!-- end  search bar-->
-                  <li><a  href="#credits" class="toggle btn "><i class="fa fa-search"></i></a></li>
-                </ul>
-                  <span class="line-animation" style="overflow: hidden; width: 0px; left: 0;"></span>
-                 </li>
+          <li>
+            <div class="logo">
+                        <a href="#"> Dell Wiki</a>
+                    </div>
+          </li>
                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li >
+                     <a href="/portfolio">Portfolio</a>
+                  </li>
+                  <li >
+                     <a href="/portfolio">Portfolio</a>
+                  </li>
 
+          <li  class="dell-menu-item"><a href="#">Skins</a>
+            <ul class="dell-sub-menu" id="dell-skin-color">
+              <li id="menu-item-Blue-Skin" class="menu-item"><a >Blue Skin</a></li>
+              <li id="menu-item-Green-Skin" class="menu-item"><a >Green Skin</a></li>
+              <li id="menu-item-Red-Skin" class="menu-item"><a >Red Skin</a></li>
+              <li id="menu-item-Default-Skin" class="menu-item"><a >Default Skin</a></li>
+            </ul>
+          </li>
+
+          <li  class="dell-menu-item"><a href="#">more</a>
+            <ul class="dell-sub-menu" id="dell-more-item">
+              <li id="menu-item-236" class="menu-item "><a >faq</a></li>
+              <li id="menu-item-237" class="menu-item"><a href=>full</a></li>
+              <li id="menu-item-238" class="menu-item"><a href=>link</a></li>
+            </ul>
+          </li>
+
+
+                  <li >
+                        <a href="/engage_us">contact Us </a>
+                  </li>
+                </ul>
              </div><!-- /.navbar-collapse -->
            </div><!-- /.container-fluid -->
           </nav>
         <!-- navigation-bar -->
-
 </header>
