@@ -120,7 +120,13 @@ $("ul #menu-item-Red-Skin").click(function(){
   $(".dell-footer").css("background-color","#F50C27");
 });
 
-
+$("ul #menu-item-Blue-Skin").click(function(){
+  $(".dell-head").css("background-color","#0085c3");
+  $(".dell-sub-menu").css("background-color","#0085c3");
+  $(".dell-search-div").css("background-color","#229d8e");
+  $("input.search-btn").css("background-color","#4fb081");
+  $(".dell-footer").css("background-color","#0085c3");
+});
 
 
 });

@@ -181,6 +181,9 @@ input#search-text-box {
     margin-left: 111px;
     margin-top: 30px;
 }
+input#search-text-box:focus{
+    outline: none;
+}
 .search-btn {
     border-radius: 35px;
     position: absolute;
@@ -194,6 +197,9 @@ input#search-text-box {
 }
 .search-btn:hover{
     opacity: 1;
+}
+.search-btn:focus{
+    outline: none;
 }
 /* end for the searc div */
 
@@ -254,3 +260,137 @@ h4#no-result-found {
 
 
 
+
+
+
+
+
+.click-anim {
+    position: absolute;
+    top: 89px;
+    left: 420px;
+    -webkit-transition: .3s cubic-bezier(.15,.60,.30,1.9);
+    transition: .3s cubic-bezier(.15,.60,.30,1.9);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+
+figure {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+    background-color: dodgerblue;
+}
+figure {
+    width: 100px;
+    height: 100px;
+    padding-top: 28px;
+    box-shadow: inset -10px -30px rgba(0,0,0,.06);
+    border-radius: 50%;
+    -webkit-animation: bobble 5s ease-in-out infinite;
+    animation: bobble 5s ease-in-out infinite;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-transition: padding .3s, bottom .3s;
+    transition: padding .3s, bottom .3s;
+    text-align: center;
+    background: #0085c3;
+}
+.eye {
+    display: inline-block;
+    width: 5px;
+    height: 8px;
+    /*margin: 0 5px 5px;*/
+    background: rgba(0,0,0,.9);
+    border-radius: 10px;
+    border-radius: 50%;
+    -webkit-animation: blink 4s ease-in-out infinite;
+    animation: blink 4s ease-in-out infinite;
+}
+.hungry .mouth {
+    -webkit-animation: hungry .5s infinite;
+    animation: hungry .5s infinite;
+    border-radius: 30px 30px 50% 50%;
+    height: 0px;
+}
+.mouth {
+    display: block;
+    width: 31%;
+    height: 20px;
+    margin: 13px -1px 27px 36px;
+    background: rgba(0,0,0,.9);
+    border-radius: 10px 10px 100px 100px;
+    border-radius: 10px 10px 50% 50%;
+    -webkit-transition: border-radius .5s, height .5s cubic-bezier(.15,.60,.30,1.9);
+    transition: border-radius .5s, height .5s cubic-bezier(.15,.60,.30,1.9);
+    overflow: hidden;
+    line-height: 0;
+    -webkit-transform-origin: center top;
+    transform-origin: center top;
+}
+.hungry .mouth:hover {
+    cursor: none;
+}
+.hungry .mouth {
+    -webkit-animation: hungry .5s infinite;
+    animation: hungry .5s infinite;
+    border-radius: 0px 0px 50% 50%;
+    height: 0px;
+}
+@-webkit-keyframes hungry {
+  40% {
+    height: 40px;
+  }
+}
+
+@keyframes hungry {
+  40% {
+    height: 40px;
+  }
+}
+
+@-webkit-keyframes blink {
+  90% {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  95% {
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+  }
+}
+
+@keyframes blink {
+  90% {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  95% {
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+  }
+}
+@-webkit-keyframes bobble {
+  33% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+
+  66% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes bobble {
+  33% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+
+  66% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+}
