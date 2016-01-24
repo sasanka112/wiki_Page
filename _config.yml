@@ -1,6 +1,7 @@
 # Build settings
 
 markdown: kramdown
+baseurl: /wiki_Page
 permalink: pretty
 collections:
   jobboard:
