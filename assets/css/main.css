@@ -1,57 +1,51 @@
-@font-face {
-    font-family: 'Campton-Bold';
-    src: url('../font/otf/Campton-Bold.otf');
-}
-@font-face {
-    font-family: 'Campton-Book';
-    src: url('../font/otf/Campton-Book.otf');
-}
-@font-face {
-    font-family: 'Campton-ExtraBoldItalic';
-    src: url('../font/otf/Campton-ExtraBoldItalic.otf');
-}
-@font-face { 
-    font-family: 'Campton-Light';
-    src: url('../font/otf/Campton-Light.otf');
-}
-@font-face {
-    font-family: 'Campton-LightItalic';
-    src: url('../font/otf/Campton-LightItalic.otf');
-}
-@font-face {
-    font-family: 'Campton-Medium';
-    src: url('../font/otf/Campton-Medium.otf');
-}
-@font-face {
-    font-family: 'Campton-SemiBold';
-    src: url('../font/otf/Campton-SemiBold.otf');
+
+/* fonts */
+    @font-face {
+        font-family:'gotham-rounded-bold';
+        src: url(../font/gotham-rounded-bold.otf);
+    }
+    @font-face {
+        font-family:'gotham-rounded-book';
+        src: url(../font/gotham-rounded-book.otf);
+    }
+    @font-face {
+        font-family:'gotham-rounded-light';
+        src: url(../font/gotham-rounded-light.otf);
+    }
+    @font-face {
+        font-family:'gotham-rounded-book-italic';
+        src: url(../font/gotham-rounded-book-italic.otf);
+    }
+    @font-face {
+        font-family:'gotham-rounded-light-italic';
+        src: url(../font/gotham-rounded-light-italic.otf);
+    }
+*{
+        font-family: "Trebuchet MS", Arial, Sans-Serif;
 }
 
-.campton_bold{
-        font-family:Campton-Bold ;
-}
-.campton_book{
-        font-family:Campton-Book ;
-}
-.campton_extrabolditalic{
-        font-family:Campton-ExtraBoldItalic ;
-}
-.campton_light{
-        font-family: Campton-Light;
-}
-.campton_lightitalic{
-        font-family: Campton-LightItalic;
-}
-.campton_medium{
-        font-family: Campton-Medium;
-}
-.campton_semibold{
-        font-family: Campton-SemiBold;
-}
+
+/*    .gotham-rounded-bold {
+        font-family: "gotham-rounded-bold";
+    }
+    .gotham-rounded-bok {
+        font-family: "gotham-rounded-book"; 
+    }
+    .gotham-rounded-light {
+        font-family: "gotham-rounded-light"; 
+    }
+    .gotham-book-italic {
+        font-family: "gotham-rounded-book-italic"; 
+    }
+    .gotham-light-italic {
+        font-family: "gotham-rounded-light-italic"; 
+    }*/
+
+/* end of fonts */
 
 
 .mainLoginInput::-webkit-input-placeholder {
-    font-family: Campton-Book;
+    font-family: "gotham-rounded-light";
 }
 
 
@@ -162,11 +156,11 @@
 
 /* for the searc div */
 .dell-search-div{
-    height: 347px;
+    height: 300px;
     background-color: #229d8e;
 }
 .search-header{
-    margin-top: 131px;
+    margin-top: 89px;
 }
 .search-tag-line{
     margin-top: 20px;
@@ -237,8 +231,8 @@ h4#no-result-found {
     /*color:#4fb084;*/
 }
 .topic p{
-    line-height: 40px;
-    letter-spacing: 1px;
+    line-height: 24px;
+    /*letter-spacing: 1px;*/
 }
 .topic .post-meta.clearfix {
     margin-bottom: 4px;
@@ -249,7 +243,21 @@ h4#no-result-found {
     cursor: pointer;
 }
 .more-description{
-    display: none;
+    /*display: none;*/ 
+        margin-left: 31px;
+}
+.less-description{
+    /*position: absolute;*/
+    /*margin-left: 13px;*/
+    font-size: 22px;
+    font-weight: lighter;
+    /*margin-top: -41px;*/
+}
+.topic header h3 a:hover{
+    color:#337ab7;
+}
+#main-post-tile{
+    margin-left: 5px;
 }
 /* end of Page Container */
 
@@ -276,8 +284,8 @@ h4#no-result-found {
 
 .click-anim {
     position: absolute;
-    top: 89px;
-    left: 420px;
+    top: 77px;
+    left: 286px;
     -webkit-transition: .3s cubic-bezier(.15,.60,.30,1.9);
     transition: .3s cubic-bezier(.15,.60,.30,1.9);
     -webkit-transform-origin: center bottom;

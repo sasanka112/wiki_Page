@@ -8,8 +8,8 @@
 	   <!-- Start of Search Wrapper -->
         <div class="search-area-wrapper">
             <div class="search-area container">
-                <h1 class="search-header text-center text-color-white campton_book">Have a Question?</h3>
-                <p class="search-tag-line text-center text-color-white campton_book">If you have any question you can ask below or enter what you are looking for!</p>
+                <h1 class="search-header text-center text-color-white gotham-rounded-bok">Have a Question?</h3>
+                <p class="search-tag-line text-center text-color-white gotham-rounded-bok">If you have any question you can ask below or enter what you are looking for!</p>
 
 
                 <div class="click-anim">
@@ -58,9 +58,11 @@
 {% for job in  site.jobboard %}
                 <article id="post-1" class=" post-1 topic type-topic status-publish hentry topic-tag-basic topic-tag-suggestion">
     				<header class="clearfix">
-       					 <h3 class="post-title campton_bold">
+       					 <h3 class="post-title gotham-rounded-bold">
                         <a >
-               			 <i class="fa fa-pencil-square-o"></i>{{job.topic_title}}</a>
+               			 <i class="fa fa-pencil-square-o"></i><span id="main-post-tile">{{job.topic_title}}</span></a>
+                         <span class="less-description gotham-rounded-light">({{job.topic_description}})
+                        </span>
       					</h3>
 				       <!--  <div class="post-meta clearfix">
 				            <span class="date"><i class="fa fa-calendar-o"></i>&nbsp;&nbsp;{{job.date}}&nbsp;&nbsp;</span>
@@ -68,9 +70,10 @@
 	                    </div> --> 
 	                    <!-- end of post meta -->
 				    </header>
-				    <p class="less-description campton_light">{{job.topic_description}}<a class="readmore-link read-me-link" >&nbsp;&nbsp;&nbsp;&nbsp;Read more</a>
+<!-- 				    <p class="less-description campton_light">{{job.topic_description}}
+                        <a class="readmore-link read-me-link" >&nbsp;&nbsp;&nbsp;&nbsp;Read more</a>
 				    </p>
-				    <p class="more-description campton_light">{{job.topic_more_description}}</p>
+ -->				    <p class="more-description gotham-rounded-light">{{job.topic_more_description}}</p>
 				</article>
  {% endfor %}
 
