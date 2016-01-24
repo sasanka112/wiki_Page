@@ -42,7 +42,7 @@ function postSearchFunction(){
   $("#search-title-span").text(search_text);
 
   $( ".topic" ).each(function() {
-    var topic_header = $( this ).find(" header h3 a" ).text();
+    var topic_header = $( this ).find(" header h3.post-title " ).text();
     search_text = search_text.trim().toLowerCase();
 
     if(search_text != "")
