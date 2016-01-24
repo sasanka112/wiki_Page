@@ -54,8 +54,8 @@
                 	<span class="text-color-black" id="search-title-span">mn</span>
                 </h4>
                 <h4 id="no-result-found">Sorry,no Result Found!</h4>
-
-{% for job in  site.jobboard %}
+{% assign jobboardd = site.jobboard | sort: "order" %}
+{% for job in  jobboardd %}
                 <article id="post-1" class=" post-1 topic type-topic status-publish hentry topic-tag-basic topic-tag-suggestion">
     				<header class="clearfix">
        					 <h3 class="post-title gotham-rounded-bold">
