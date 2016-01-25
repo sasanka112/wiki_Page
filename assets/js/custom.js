@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-$(".read-me-link").click(function(){
+// $(".read-me-link").click(function(){
 
   // $( ".more-description" ).each(function() {
   //   $( this ).hide();
@@ -14,7 +14,7 @@ $(".read-me-link").click(function(){
   // $(this).parent().next().css("opacity","0"); 
   // $(this).parent().next().animate({opacity: "1"},1000);
   // $(this).parent().hide();
-});
+// });
 
 
 function init_page(){
@@ -85,50 +85,63 @@ $("#dell-search-button").click(function(){
 
 
 
-$(".dell-menu-item").mouseenter(function(){
-  $(this).children().show();
-   $(this).children().animate({opacity: "1"},500);
-});
-$(".dell-menu-item").mouseleave(function(){
-  $(this).children(".dell-sub-menu").hide();
-  $(this).children(".dell-sub-menu").css("opacity","0");
-});
 
 
 
 
 
-$("ul #menu-item-Green-Skin").click(function(){
-  $(".dell-head").css("background-color","#2F8032");
-  $(".dell-sub-menu").css("background-color","#2F8032");
-  $(".dell-search-div").css("background-color","#B8E3B9");
-  $("input.search-btn").css("background-color","#A2FAA5");
-  $(".dell-footer").css("background-color","#2F8032");
-});
 
-$("ul #menu-item-Default-Skin").click(function(){
-  $(".dell-head").css("background-color","#4fb084");
-  $(".dell-sub-menu").css("background-color","#4fb084");
-  $(".dell-search-div").css("background-color","#229d8e");
-  $("input.search-btn").css("background-color","#4fb081");
-  $(".dell-footer").css("background-color","#4fb084");
-});
 
-$("ul #menu-item-Red-Skin").click(function(){
-  $(".dell-head").css("background-color","#F50C27");
-  $(".dell-sub-menu").css("background-color","#F50C27");
-  $(".dell-search-div").css("background-color","#8A2F39");
-  $("input.search-btn").css("background-color","#C25F6A");
-  $(".dell-footer").css("background-color","#F50C27");
-});
 
-$("ul #menu-item-Blue-Skin").click(function(){
-  $(".dell-head").css("background-color","#0085c3");
-  $(".dell-sub-menu").css("background-color","#0085c3");
-  $(".dell-search-div").css("background-color","#229d8e");
-  $("input.search-btn").css("background-color","#4fb081");
-  $(".dell-footer").css("background-color","#0085c3");
-});
+
+
+
+
+
+// $(".dell-menu-item").mouseenter(function(){
+//   $(this).children().show();
+//    $(this).children().animate({opacity: "1"},500);
+// });
+// $(".dell-menu-item").mouseleave(function(){
+//   $(this).children(".dell-sub-menu").hide();
+//   $(this).children(".dell-sub-menu").css("opacity","0");
+// });
+
+
+
+
+
+// $("ul #menu-item-Green-Skin").click(function(){
+//   $(".dell-head").css("background-color","#2F8032");
+//   $(".dell-sub-menu").css("background-color","#2F8032");
+//   $(".dell-search-div").css("background-color","#B8E3B9");
+//   $("input.search-btn").css("background-color","#A2FAA5");
+//   $(".dell-footer").css("background-color","#2F8032");
+// });
+
+// $("ul #menu-item-Default-Skin").click(function(){
+//   $(".dell-head").css("background-color","#4fb084");
+//   $(".dell-sub-menu").css("background-color","#4fb084");
+//   $(".dell-search-div").css("background-color","#229d8e");
+//   $("input.search-btn").css("background-color","#4fb081");
+//   $(".dell-footer").css("background-color","#4fb084");
+// });
+
+// $("ul #menu-item-Red-Skin").click(function(){
+//   $(".dell-head").css("background-color","#F50C27");
+//   $(".dell-sub-menu").css("background-color","#F50C27");
+//   $(".dell-search-div").css("background-color","#8A2F39");
+//   $("input.search-btn").css("background-color","#C25F6A");
+//   $(".dell-footer").css("background-color","#F50C27");
+// });
+
+// $("ul #menu-item-Blue-Skin").click(function(){
+//   $(".dell-head").css("background-color","#0085c3");
+//   $(".dell-sub-menu").css("background-color","#0085c3");
+//   $(".dell-search-div").css("background-color","#229d8e");
+//   $("input.search-btn").css("background-color","#4fb081");
+//   $(".dell-footer").css("background-color","#0085c3");
+// });
 
 
 });

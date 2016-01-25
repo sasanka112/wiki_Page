@@ -281,7 +281,7 @@ h4#no-result-found {
 
 
 
-
+/*
 .click-anim {
     position: absolute;
     top: 77px;
@@ -320,7 +320,7 @@ figure {
     width: 5px;
     height: 8px;
     /*margin: 0 5px 5px;*/
-    background: rgba(0,0,0,.9);
+ /*   background: rgba(0,0,0,.9);
     border-radius: 10px;
     border-radius: 50%;
     -webkit-animation: blink 4s ease-in-out infinite;
@@ -413,4 +413,4 @@ figure {
     -webkit-transform: rotate(-10deg);
     transform: rotate(-10deg);
   }
-}
+}*/
