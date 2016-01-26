@@ -39,7 +39,9 @@ function postSearchFunction(){
   //   $( this ).hide();
   // });
 
+
   $("#no-result-found").hide();
+  $(".ui-menu.ui-widget-content").css("display" ,"none");
 
   // $( ".less-description" ).each(function() {
   //   $( this ).show();
