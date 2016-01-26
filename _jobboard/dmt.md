@@ -3,9 +3,8 @@
 layout: default
 topic_title: DMT
 order: 20
-date: 10-12-2015
 topic_description:   Demand Management Tool
-topic_more_description: DMT
+topic_more_description: Demand Management is a planning methodology used to forecast [predict].The Demand Management application consists of tools for capturing, centralizing, and analyzing strategic and operational demands.
 
 
 ---

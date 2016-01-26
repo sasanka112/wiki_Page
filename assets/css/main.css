@@ -414,3 +414,21 @@ figure {
     transform: rotate(-10deg);
   }
 }*/
+
+
+
+
+ul#ui-id-1{
+    background-color: gray;
+    width: 35% !important;
+}
+ul#ui-id-1 li{
+    list-style-type: none;
+    margin-left: -20px;
+    margin-top: 5px;
+    color:#fff;
+    cursor: pointer;
+}
+ul#ui-id-1 li:hover{
+    color:#000;
+}

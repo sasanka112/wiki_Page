@@ -3,7 +3,6 @@
 layout: default
 topic_title: CFO
 order: 11
-date: 10-12-2015
 topic_description:   Customer Facing Output 
 topic_more_description: CFO is an application within OMEGA which sends out Invoices,  notifications and legal documents to consumer and commercial customers of DELL. OCI has various inbound and outbound interfaces with CFO.   
   <br/>A) CFO to FOSP for JP region where CFO sends postcards and invoice and receipt information to FOSP.  

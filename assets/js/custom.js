@@ -17,6 +17,14 @@ $(document).ready(function(){
 // });
 
 
+var availableTags = [""];
+
+$( ".topic" ).each(function() {
+    var topic_header = $( this ).find(" header h3.post-title #main-post-tile" ).text();
+    availableTags.push(topic_header);
+});
+
+
 function init_page(){
   $( ".topic" ).each(function() {
     $( this ).hide();
@@ -84,14 +92,31 @@ $("#dell-search-button").click(function(){
 
 
 
+/* for controlling the autocomplete list*/
+function ganttEach() {
+    if( $(".ui-menu.ui-widget-content").css("display") == "block" )
+    {
+        var showedItem = 0;
+        $( ".ui-menu-item" ).each(function() {
+        $( this ).show();
+      });
+        $( ".ui-menu-item" ).each(function() {
 
+          showedItem = showedItem + 1;
+          if(showedItem > 8)
+          {
+            
+            $( this ).hide();
+          } 
+      });
+    }
+  window.setTimeout(ganttEach, 100); // calls itself again in one second
+}
 
+// ...initiate self-repeating function
+ganttEach();
 
-
-
-
-
-
+/* end for controlling the autocomplete list*/
 
 
 
@@ -142,6 +167,29 @@ $("#dell-search-button").click(function(){
 //   $("input.search-btn").css("background-color","#4fb081");
 //   $(".dell-footer").css("background-color","#0085c3");
 // });
+
+
+  $(function() {
+    $( "#search-text-box" ).autocomplete({
+      source: availableTags
+    });
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 });
