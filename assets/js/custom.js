@@ -1,22 +1,5 @@
 $(document).ready(function(){
 
-
-// $(".read-me-link").click(function(){
-
-  // $( ".more-description" ).each(function() {
-  //   $( this ).hide();
-  // });
-  // $( ".less-description" ).each(function() {
-  //   $( this ).show();
-  // });
-
-  // $(this).parent().next().show();
-  // $(this).parent().next().css("opacity","0"); 
-  // $(this).parent().next().animate({opacity: "1"},1000);
-  // $(this).parent().hide();
-// });
-
-
 var availableTags = [""];
 
 $( ".topic" ).each(function() {
@@ -28,60 +11,46 @@ $( ".topic" ).each(function() {
 function init_page(){
   $( ".topic" ).each(function() {
     $( this ).hide();
-
-
-
   });
 }
+
+// init_page();
+
+/* main search function*/
 function postSearchFunction(){
-
-  // $( ".more-description" ).each(function() {
-  //   $( this ).hide();
-  // });
-
-
   $("#no-result-found").hide();
   $(".ui-menu.ui-widget-content").css("display" ,"none");
-
-  // $( ".less-description" ).each(function() {
-  //   $( this ).show();
-  // });
-
-  var flag=0;
   var search_text = $("#search-text-box").val();
+  search_text = search_text.trim().toLowerCase();
+
   $("#search-title-span").text(search_text);
-
-  $( ".topic" ).each(function() {
-    var topic_header = $( this ).find(" header h3.post-title " ).text();
-    search_text = search_text.trim().toLowerCase();
-
-    if(search_text != "")
+  if(search_text == "")
       {
-        $(".search-title").show();
+        $(".search-title").hide();
+        init_page();
       }
     else
       {
-        $(".search-title").hide();
-      }
-      // alert();
-    topic_header = topic_header.trim().toLowerCase();
-    if(topic_header.search(search_text)  > -1 )
+        $(".search-title").show();
+        var flag=0;
+        $( ".topic" ).each(function() {
+        var topic_header = $( this ).find(" header h3.post-title " ).text();
+        topic_header = topic_header.trim().toLowerCase();
+          if(topic_header.search(search_text)  > -1 )
            {
             $(this).show();
             flag=1;
-            // $(this).addClass('shown-item');
            }
            else{
             $(this).hide();
-
-            // $(this).removeClass('shown-item');
            } 
-    // alert(topic_header);
-  });
-  if(flag==0){
-    $("#no-result-found").show();
-  }
+       });
+          if(flag==0){
+          $("#no-result-found").show();
+          } 
+      }
 }
+/* end of search function*/
 $('.search-term').keydown(function(e) {
       if (e.keyCode == 13) {
     postSearchFunction();
