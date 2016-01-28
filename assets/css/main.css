@@ -76,12 +76,17 @@
     height: 53px;
     padding-top: 2px;
     width: 100%;
+    top: 0%;
     position: fixed;
     background-color: #0085c3;
     border-color: transparent;
 }
 .dell-head a{
     color:#fff;
+}
+img#dell-logo {
+    position: absolute;
+    left: 0.8%;
 }
 
 .dell-head .navbar-collapse ul>li>a {
@@ -160,7 +165,7 @@
     background-color: #229d8e;
 }
 .search-header{
-    margin-top: 147px;
+        padding-top: 119px;
 }
 .search-tag-line{
     margin-top: 26px;
@@ -202,7 +207,9 @@ h4#no-result-found {
     margin-top: 38px;
     display: none;
     margin-bottom: 59px;
-
+}
+.span8.main-listing {
+    padding: 0% 7% 0% 7%;
 }
 .topic {
     display: none;
@@ -294,13 +301,13 @@ ul#ui-id-1 li:hover{
 
 input#search-text-box {
     font-size: 16px;
-    width: 81%;
+    width: 70%;
     border-radius: 35px;
     height: 53px;
     border-style: none;
     margin-right: 24px;
     text-indent: 30px;
-    margin-left: 10%;
+    margin-left: 16%;
     margin-top: 30px;
 }
 .search-btn {
